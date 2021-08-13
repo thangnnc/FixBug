@@ -290,7 +290,7 @@ public class Server extends javax.swing.JFrame {
         lblNameClient.setText("CLIENT 1");
 
         btnCallVideo.setBackground(new java.awt.Color(255, 255, 255));
-        btnCallVideo.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\Images\\video-call.png")); // NOI18N
+        btnCallVideo.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\video-call.png")); // NOI18N
         btnCallVideo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnCallVideoMouseEntered(evt);
@@ -301,7 +301,7 @@ public class Server extends javax.swing.JFrame {
         });
 
         btnPhoneCall.setBackground(new java.awt.Color(255, 255, 255));
-        btnPhoneCall.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\Images\\telephone.png")); // NOI18N
+        btnPhoneCall.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\telephone.png")); // NOI18N
         btnPhoneCall.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnPhoneCallMouseEntered(evt);
@@ -312,7 +312,7 @@ public class Server extends javax.swing.JFrame {
         });
 
         btnAn.setBackground(new java.awt.Color(255, 255, 255));
-        btnAn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\Images\\remove.png")); // NOI18N
+        btnAn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\remove.png")); // NOI18N
         btnAn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnAnMouseEntered(evt);
@@ -323,7 +323,7 @@ public class Server extends javax.swing.JFrame {
         });
 
         btnExit.setBackground(new java.awt.Color(255, 255, 255));
-        btnExit.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\Images\\cancel.png")); // NOI18N
+        btnExit.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\cancel.png")); // NOI18N
         btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnExitMouseEntered(evt);

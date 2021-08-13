@@ -8,6 +8,7 @@ package Forms;
 import java.awt.Color;
 import javax.swing.JButton;
 import BoxChat.*;
+import LienHe.*;
 /**
  *
  * @author Dell
@@ -19,6 +20,7 @@ public class Home extends javax.swing.JFrame {
      * Creates new form Home
      */
     private static Client client = new Client();
+    private static LienHe lienHe = new LienHe();
     public Home() {
         initComponents();
     }
@@ -1622,6 +1624,7 @@ public class Home extends javax.swing.JFrame {
 
     private void btnLienHeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLienHeActionPerformed
         // TODO add your handling code here:
+        lienHe.setVisible(true);
     }//GEN-LAST:event_btnLienHeActionPerformed
 
     private void btnLienHeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLienHeMouseEntered

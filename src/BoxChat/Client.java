@@ -34,6 +34,7 @@ public class Client extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         btnSend = new javax.swing.JButton();
@@ -47,6 +48,9 @@ public class Client extends javax.swing.JFrame {
         edChatBox = new javax.swing.JEditorPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+
+        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -72,11 +76,11 @@ public class Client extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\Images\\icons8_administrator_male_73px_1.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\icons8_administrator_male_73px_1.png")); // NOI18N
         jLabel1.setText("CLIENT 1");
 
         btnCallVideo.setBackground(new java.awt.Color(255, 255, 255));
-        btnCallVideo.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\Images\\video-call.png")); // NOI18N
+        btnCallVideo.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\video-call.png")); // NOI18N
         buttonGroup1.add(btnCallVideo);
         btnCallVideo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -88,7 +92,7 @@ public class Client extends javax.swing.JFrame {
         });
 
         btnPhoneCall.setBackground(new java.awt.Color(255, 255, 255));
-        btnPhoneCall.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\Images\\telephone.png")); // NOI18N
+        btnPhoneCall.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\telephone.png")); // NOI18N
         buttonGroup1.add(btnPhoneCall);
         btnPhoneCall.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -100,7 +104,7 @@ public class Client extends javax.swing.JFrame {
         });
 
         btnAn.setBackground(new java.awt.Color(255, 255, 255));
-        btnAn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\Images\\remove.png")); // NOI18N
+        btnAn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\remove.png")); // NOI18N
         buttonGroup1.add(btnAn);
         btnAn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -112,7 +116,7 @@ public class Client extends javax.swing.JFrame {
         });
 
         btnExit.setBackground(new java.awt.Color(255, 255, 255));
-        btnExit.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\Images\\cancel.png")); // NOI18N
+        btnExit.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\cancel.png")); // NOI18N
         buttonGroup1.add(btnExit);
         btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -133,7 +137,7 @@ public class Client extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnCallVideo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -168,7 +172,7 @@ public class Client extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnSend))
             .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane1)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,15 +187,32 @@ public class Client extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 449, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 501, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -302,6 +323,7 @@ public class Client extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables

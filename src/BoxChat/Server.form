@@ -505,7 +505,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\GitHub\FixBug\src\Images\video-call.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\GitHub\FixBug\src\ImagesBoxChat\video-call.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -519,7 +519,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\GitHub\FixBug\src\Images\telephone.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\GitHub\FixBug\src\ImagesBoxChat\telephone.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -533,7 +533,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\GitHub\FixBug\src\Images\remove.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\GitHub\FixBug\src\ImagesBoxChat\remove.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -547,7 +547,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\GitHub\FixBug\src\Images\cancel.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\GitHub\FixBug\src\ImagesBoxChat\cancel.png"/>
                 </Property>
               </Properties>
               <Events>
