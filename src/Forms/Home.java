@@ -1597,7 +1597,7 @@ public class Home extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
+// <editor-fold defaultstate="collapsed" desc="Sự kiện trên thanh đăng nhập - liên hệ">
     private void lblButtonExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblButtonExitMouseClicked
         System.exit(0);
     }//GEN-LAST:event_lblButtonExitMouseClicked
@@ -1637,7 +1637,9 @@ public class Home extends javax.swing.JFrame {
     private void btnDonHangMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDonHangMouseExited
         hover(btnDonHang, 1);
     }//GEN-LAST:event_btnDonHangMouseExited
+// </editor-fold>
 
+// <editor-fold defaultstate="collapsed" desc="Sự kiện trên thanh menu">
     private void btnAppleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAppleActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAppleActionPerformed
@@ -1709,7 +1711,9 @@ public class Home extends javax.swing.JFrame {
     private void btnNokiaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNokiaMouseExited
         hover(btnNokia, 1);
     }//GEN-LAST:event_btnNokiaMouseExited
-
+// </editor-fold>
+    
+// <editor-fold defaultstate="collapsed" desc="Sự kiện Next Prev tại Home">
     private void btnNextHotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextHotActionPerformed
         if(pointHot != 1000){
             pointHot += 100;
@@ -1737,7 +1741,7 @@ public class Home extends javax.swing.JFrame {
             spnlSale.getHorizontalScrollBar().setValue(pointSale);
         }
     }//GEN-LAST:event_btnNextHot2ActionPerformed
-
+// </editor-fold>
     /**
      * @param args the command line arguments
      */
@@ -1957,6 +1961,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane spnlSale;
     // End of variables declaration//GEN-END:variables
 
+    
+// <editor-fold defaultstate="collapsed" desc="Phương thức chung">
 // Phương thức hover
     private void hover(JButton btn, int a){
         if(a == 0){
@@ -1967,4 +1973,15 @@ public class Home extends javax.swing.JFrame {
             btn.setForeground(new Color(51,51,51));
         }
     }
+// </editor-fold>
+    
+// <editor-fold defaultstate="collapsed" desc="Phương thức thanh Đăng nhập - liên hệ">
+    
+    
+// </editor-fold>
+    
+// <editor-fold defaultstate="collapsed" desc="Phương thức ChatBox">
+    
+    
+// </editor-fold>
 }
