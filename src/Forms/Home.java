@@ -7,7 +7,7 @@ package Forms;
 
 import java.awt.Color;
 import javax.swing.JButton;
-
+import BoxChat.*;
 /**
  *
  * @author Dell
@@ -18,6 +18,7 @@ public class Home extends javax.swing.JFrame {
     /**
      * Creates new form Home
      */
+    private static Client client = new Client();
     public Home() {
         initComponents();
     }
@@ -56,7 +57,7 @@ public class Home extends javax.swing.JFrame {
         btnDangNhap = new javax.swing.JButton();
         jSeparator11 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        lblBoxChat = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         pnlCard = new javax.swing.JPanel();
@@ -541,9 +542,14 @@ public class Home extends javax.swing.JFrame {
         jLabel3.setOpaque(true);
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 1200, 210));
 
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_chat_60px_1.png"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 680, 70, 70));
+        lblBoxChat.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBoxChat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_chat_60px_1.png"))); // NOI18N
+        lblBoxChat.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblBoxChatMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lblBoxChat, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 680, 70, 70));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -1741,6 +1747,11 @@ public class Home extends javax.swing.JFrame {
             spnlSale.getHorizontalScrollBar().setValue(pointSale);
         }
     }//GEN-LAST:event_btnNextHot2ActionPerformed
+
+    private void lblBoxChatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBoxChatMouseClicked
+        // TODO add your handling code here:
+        client.setVisible(true);
+    }//GEN-LAST:event_lblBoxChatMouseClicked
 // </editor-fold>
     /**
      * @param args the command line arguments
@@ -1797,14 +1808,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;
     private javax.swing.JLabel jLabel103;
-    private javax.swing.JLabel jLabel104;
-    private javax.swing.JLabel jLabel105;
-    private javax.swing.JLabel jLabel106;
-    private javax.swing.JLabel jLabel107;
-    private javax.swing.JLabel jLabel108;
-    private javax.swing.JLabel jLabel109;
-    private javax.swing.JLabel jLabel110;
-    private javax.swing.JLabel jLabel111;
     private javax.swing.JLabel jLabel112;
     private javax.swing.JLabel jLabel113;
     private javax.swing.JLabel jLabel114;
@@ -1873,7 +1876,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
@@ -1882,14 +1884,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
-    private javax.swing.JLabel jLabel64;
-    private javax.swing.JLabel jLabel65;
-    private javax.swing.JLabel jLabel66;
-    private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel70;
-    private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
@@ -1898,14 +1892,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel80;
-    private javax.swing.JLabel jLabel81;
-    private javax.swing.JLabel jLabel82;
-    private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
-    private javax.swing.JLabel jLabel85;
-    private javax.swing.JLabel jLabel86;
-    private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel90;
@@ -1922,13 +1908,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel3;
@@ -1954,6 +1937,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
+    private javax.swing.JLabel lblBoxChat;
     private javax.swing.JLabel lblButtonExit;
     private javax.swing.JPanel pnlCard;
     private javax.swing.JScrollPane spnlHome;
