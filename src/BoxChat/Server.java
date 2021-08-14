@@ -276,6 +276,7 @@ public class Server extends javax.swing.JFrame {
         pnlCard.setLayout(new java.awt.CardLayout());
 
         edChatBox1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        edChatBox1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         spClient1.setViewportView(edChatBox1);
 
         pnlCard.add(spClient1, "client1");
