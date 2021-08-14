@@ -51,11 +51,7 @@ public class Server extends javax.swing.JFrame {
         pnlClient2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         lblClient2 = new javax.swing.JLabel();
-        statusClient2 = new javax.swing.JLabel();
-        pnlClient3 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        lblClient3 = new javax.swing.JLabel();
-        statusClient3 = new javax.swing.JLabel();
+        statusClient4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         btnSent = new javax.swing.JButton();
         txtMess = new javax.swing.JTextField();
@@ -65,10 +61,6 @@ public class Server extends javax.swing.JFrame {
         spClient2 = new javax.swing.JScrollPane();
         edChatBox2 = new javax.swing.JEditorPane();
         lblNameClient = new javax.swing.JLabel();
-        btnCallVideo = new javax.swing.JButton();
-        btnPhoneCall = new javax.swing.JButton();
-        btnAn = new javax.swing.JButton();
-        btnExit = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -93,13 +85,13 @@ public class Server extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_administrator_male_73px_1.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesBoxChat/icons8_administrator_male_73px_1.png"))); // NOI18N
 
         lblClient1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblClient1.setForeground(new java.awt.Color(51, 51, 51));
         lblClient1.setText("Client 1");
 
-        statusClient1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/iconOnline.png"))); // NOI18N
+        statusClient1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesBoxChat/iconOnline.png"))); // NOI18N
 
         javax.swing.GroupLayout pnlClient1Layout = new javax.swing.GroupLayout(pnlClient1);
         pnlClient1.setLayout(pnlClient1Layout);
@@ -112,7 +104,7 @@ public class Server extends javax.swing.JFrame {
                 .addComponent(lblClient1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(statusClient1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         pnlClient1Layout.setVerticalGroup(
             pnlClient1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -144,13 +136,13 @@ public class Server extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_security_specialist_male_73px.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesBoxChat/icons8_security_specialist_male_73px.png"))); // NOI18N
 
         lblClient2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblClient2.setForeground(new java.awt.Color(51, 51, 51));
         lblClient2.setText("Client 2");
 
-        statusClient2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/iconOffline.png"))); // NOI18N
+        statusClient4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesBoxChat/iconOffline.png"))); // NOI18N
 
         javax.swing.GroupLayout pnlClient2Layout = new javax.swing.GroupLayout(pnlClient2);
         pnlClient2.setLayout(pnlClient2Layout);
@@ -162,7 +154,7 @@ public class Server extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblClient2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(statusClient2)
+                .addComponent(statusClient4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlClient2Layout.setVerticalGroup(
@@ -174,57 +166,8 @@ public class Server extends javax.swing.JFrame {
             .addGroup(pnlClient2Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addGroup(pnlClient2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(statusClient2)
+                    .addComponent(statusClient4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblClient2))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        pnlClient3.setBackground(new java.awt.Color(255, 102, 102));
-        pnlClient3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        pnlClient3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                pnlClient3MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnlClient3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlClient3MouseExited(evt);
-            }
-        });
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_security_specialist_male_73px.png"))); // NOI18N
-
-        lblClient3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblClient3.setForeground(new java.awt.Color(51, 51, 51));
-        lblClient3.setText("Client 2");
-
-        statusClient3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/iconOffline.png"))); // NOI18N
-
-        javax.swing.GroupLayout pnlClient3Layout = new javax.swing.GroupLayout(pnlClient3);
-        pnlClient3.setLayout(pnlClient3Layout);
-        pnlClient3Layout.setHorizontalGroup(
-            pnlClient3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlClient3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lblClient3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(statusClient3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        pnlClient3Layout.setVerticalGroup(
-            pnlClient3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlClient3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(pnlClient3Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(pnlClient3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(statusClient3)
-                    .addComponent(lblClient3))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -236,8 +179,7 @@ public class Server extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pnlClient1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlClient2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlClient3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(pnlClient2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -247,8 +189,6 @@ public class Server extends javax.swing.JFrame {
                 .addComponent(pnlClient1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(pnlClient2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(pnlClient3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -290,55 +230,6 @@ public class Server extends javax.swing.JFrame {
         lblNameClient.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblNameClient.setText("CLIENT 1");
 
-        btnCallVideo.setBackground(new java.awt.Color(255, 255, 255));
-        btnCallVideo.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\video-call.png")); // NOI18N
-        btnCallVideo.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnCallVideoMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnCallVideoMouseExited(evt);
-            }
-        });
-
-        btnPhoneCall.setBackground(new java.awt.Color(255, 255, 255));
-        btnPhoneCall.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\telephone.png")); // NOI18N
-        btnPhoneCall.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnPhoneCallMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnPhoneCallMouseExited(evt);
-            }
-        });
-
-        btnAn.setBackground(new java.awt.Color(255, 255, 255));
-        btnAn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\remove.png")); // NOI18N
-        btnAn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAnMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAnMouseExited(evt);
-            }
-        });
-
-        btnExit.setBackground(new java.awt.Color(255, 255, 255));
-        btnExit.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\GitHub\\FixBug\\src\\ImagesBoxChat\\cancel.png")); // NOI18N
-        btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnExitMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnExitMouseExited(evt);
-            }
-        });
-        btnExit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExitActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -348,35 +239,17 @@ public class Server extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pnlCard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(txtMess)
+                        .addComponent(txtMess, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnSent))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(lblNameClient, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnCallVideo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnPhoneCall, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnAn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                    .addComponent(lblNameClient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblNameClient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnPhoneCall, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnCallVideo, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnAn, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnExit, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addComponent(lblNameClient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(pnlCard, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -399,8 +272,8 @@ public class Server extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -466,76 +339,15 @@ public class Server extends javax.swing.JFrame {
         sentMess();
     }//GEN-LAST:event_btnSentActionPerformed
 
-    private void btnCallVideoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCallVideoMouseEntered
+    private void btnSentMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSentMouseExited
         // TODO add your handling code here:
-        hover(btnCallVideo, 0);
-    }//GEN-LAST:event_btnCallVideoMouseEntered
-
-    private void btnCallVideoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCallVideoMouseExited
-        // TODO add your handling code here:
-        hover(btnCallVideo, 1);
-    }//GEN-LAST:event_btnCallVideoMouseExited
-
-    private void btnPhoneCallMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPhoneCallMouseEntered
-        // TODO add your handling code here:
-        hover(btnPhoneCall, 0);
-    }//GEN-LAST:event_btnPhoneCallMouseEntered
-
-    private void btnPhoneCallMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPhoneCallMouseExited
-        // TODO add your handling code here:
-        hover(btnPhoneCall, 1);
-    }//GEN-LAST:event_btnPhoneCallMouseExited
-
-    private void btnAnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAnMouseEntered
-        // TODO add your handling code here:
-        hover(btnAn, 0);
-    }//GEN-LAST:event_btnAnMouseEntered
-
-    private void btnAnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAnMouseExited
-        // TODO add your handling code here:
-        hover(btnAn, 1);
-    }//GEN-LAST:event_btnAnMouseExited
-
-    private void btnExitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitMouseEntered
-        // TODO add your handling code here:
-        hover(btnExit, 0);
-    }//GEN-LAST:event_btnExitMouseEntered
-
-    private void btnExitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitMouseExited
-        // TODO add your handling code here:
-        hover(btnExit, 1);
-    }//GEN-LAST:event_btnExitMouseExited
-
-    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_btnExitActionPerformed
-
-    private void pnlClient3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlClient3MouseClicked
-        // TODO add your handling code here:
-        clickCard("client3");
-        jPanel2.setBackground(Color.PINK);
-    }//GEN-LAST:event_pnlClient3MouseClicked
-
-    private void pnlClient3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlClient3MouseEntered
-        // TODO add your handling code here:
-        hover(pnlClient3, lblClient3, 0);
-    }//GEN-LAST:event_pnlClient3MouseEntered
-
-    private void pnlClient3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlClient3MouseExited
-        // TODO add your handling code here:
-        hover(pnlClient3, lblClient3, 1);
-    }//GEN-LAST:event_pnlClient3MouseExited
+        hover(btnSent, 1);
+    }//GEN-LAST:event_btnSentMouseExited
 
     private void btnSentMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSentMouseEntered
         // TODO add your handling code here:
         hover(btnSent, 0);
     }//GEN-LAST:event_btnSentMouseEntered
-
-    private void btnSentMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSentMouseExited
-        // TODO add your handling code here:
-        hover(btnSent, 1);
-    }//GEN-LAST:event_btnSentMouseExited
 // </editor-fold>
     /**
      * @param args the command line arguments
@@ -576,33 +388,25 @@ public class Server extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAn;
-    private javax.swing.JButton btnCallVideo;
-    private javax.swing.JButton btnExit;
-    private javax.swing.JButton btnPhoneCall;
     private javax.swing.JButton btnSent;
     private javax.swing.JEditorPane edChatBox1;
     private javax.swing.JEditorPane edChatBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblClient1;
     private javax.swing.JLabel lblClient2;
-    private javax.swing.JLabel lblClient3;
     private javax.swing.JLabel lblNameClient;
     private javax.swing.JPanel pnlCard;
     private javax.swing.JPanel pnlClient1;
     private javax.swing.JPanel pnlClient2;
-    private javax.swing.JPanel pnlClient3;
     private javax.swing.JScrollPane spClient1;
     private javax.swing.JScrollPane spClient2;
     private javax.swing.JLabel statusClient1;
-    private javax.swing.JLabel statusClient2;
-    private javax.swing.JLabel statusClient3;
+    private javax.swing.JLabel statusClient4;
     private javax.swing.JTextField txtMess;
     // End of variables declaration//GEN-END:variables
 // Method
